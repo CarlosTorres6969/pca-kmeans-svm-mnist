@@ -16,6 +16,9 @@ st.set_page_config(
 
 st.title("Reducción de Dimensionalidad y Clasificación")
 st.markdown("**PCA + K-Means + SVM sobre MNIST Digit Recognizer**")
+st.markdown("---")
+st.markdown("**Estudiante:** José Carlos Torres Donaire — 20211920141")
+st.markdown("**Materia:** Inteligencia Artificial")
 
 # -------------------------------------------------------------------
 # 1. Carga de datos
