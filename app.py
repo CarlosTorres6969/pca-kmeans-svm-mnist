@@ -253,7 +253,8 @@ with tab_svm:
         with col_s2:
             st.subheader("Reporte de Clasificación")
             report_df = pd.DataFrame(report).transpose()
-            st.dataframe(report_df.style.format("{:.3f}", subset=pd.IndexSlice[:9, :]))
+            report_df = report_df.applymap(lambda x: f"{x:.3f}" if isinstance(x, float) else x)
+            st.dataframe(report_df)
 
         st.subheader("Precisión por dígito")
         digit_acc = []
